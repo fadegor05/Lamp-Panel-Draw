@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icon.svg">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/mainHandler.js" defer></script>
+    <script src="./js/objectHandler.js" defer></script>
     <title>Lamp-Panel-Draw</title>
 </head>
 <body>
     <div class="container">
         <h1>Lamp-Panel-Draw</h1>
         <h3>developed by <a href="https://github.com/fadegor05">fadegor05</a></h3>
+
+        <table id="table-container">
+        </table>
+
+        <div class="code-container">
+            <h3>Output:</h3>
+            <div class="output">
+                <span class="code-text">S:</span>
+                <div id="code-output" class="code-text">
+                    <template id="code-row-template">
+                        <div class="code-row">
+                            <span class="code-row-title">data</span>
+                            <span class="code-row-data"></span>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

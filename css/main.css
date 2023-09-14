@@ -4,6 +4,7 @@
 
 :root {
     --text-color: #ffffff;
+    --secondary-text-color: #8d8d8d;
     --background-color: #000000;
 }
 
@@ -19,4 +20,42 @@ h1,h2,h3,h4,h5,h6,span,a{
 .container {
     text-align: center;
     margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+table{
+    margin: auto;
+    padding: 1rem;
+}
+td {
+    height: 2rem;
+    width: 2rem;
+    color: var(--text-color);
+    border: 0.2rem solid;
+    border-color: var(--text-color);
+    cursor: pointer;
+    border-radius: 2rem;
+    margin: 20rem;
+}
+
+.td-activated {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.code-container {
+    margin: auto;
+    width: fit-content;
+}
+
+.code-row-data {
+    color: var(--secondary-text-color);
+}
+
+.output {
+    color: var(--text-color); 
+    text-align: left;  
 }
