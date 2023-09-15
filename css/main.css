@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap');
 
-
 :root {
     --text-color: #ffffff;
     --secondary-text-color: #8d8d8d;
@@ -55,7 +54,21 @@ td {
     color: var(--secondary-text-color);
 }
 
-.output {
+.code-wrapper {
     color: var(--text-color); 
-    text-align: left;  
+    text-align: left;
+    padding: 20px;
+    border: solid 2px;
+    border-radius: 20px;
+    border-color: var(--secondary-text-color);
+}
+
+.code-copy-btn {
+    margin-top: 20px;
+    cursor: pointer;
+    color: var(--secondary-text-color);
+}
+
+.code-copy-btn:hover{
+    color: var(--text-color);
 }

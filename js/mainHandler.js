@@ -5,6 +5,7 @@
  * 
  */
 function mainHandler(){
+    copyObj.textContent = "copy (WIP)"
     lampsObjectsList.forEach(function (element,i) {
         let b = "";
         element.forEach(subElement =>{
@@ -14,6 +15,11 @@ function mainHandler(){
     })
 }
 
+
+function copyHandler () {
+    copyObj.textContent = "copied!"
+    console.log(wrapperObj.innerText)
+}
 
 function lampHandler (e){
     if(e.target.textContent == 0){

@@ -7,8 +7,10 @@
 
 const tableObj = document.querySelector('#table-container')
 const outputObj = document.querySelector('#code-output')
+const wrapperObj = document.querySelector('.code-wrapper')
 const templateOutObj = document.querySelector('#code-row-template')
 const templateOutDataObj = templateOutObj.content.querySelector('.code-row-data')
+const copyObj = document.querySelector('.code-copy-btn')
 
 let simplifiedLampsObjectsList = Array();
 let lampsObjectsList = Array();
@@ -50,5 +52,6 @@ function initApp(){
     for ( let button of simplifiedLampsObjectsList ){
         button.addEventListener("click", lampHandler);
     }
+    copyObj.addEventListener("click", copyHandler);
     mainHandler();
 }
